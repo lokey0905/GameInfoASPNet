@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "免費遊戲資訊網";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">免費遊戲資訊網</h1>
+        <p class="lead">
+            探索最新、最熱的免費遊戲資訊！<br>
+            我們致力於為您提供每日更新的遊戲優惠、免費領取教學，以及詳細的遊戲介紹。不論您是熱愛 Steam、Epic Games，還是其他平台，我們都幫您快速掌握精彩遊戲機會！<br>
+            趕快加入會員，一起發掘更多免費遊戲吧！<br>
+        </p>
+        <p><a href="/Home/Register" class="btn btn-primary btn-md">立即註冊 &raquo;</a></p>
+    </section>
+    <div class="row">
+        <div class="content-container">
+            @Html.Action("LatestNews", new { isPartial = true })
+        </div>
+    </div>
+</main>
+<style>
+    .content-container {
+        margin-top: 20px;
+        height: 512px;
+        overflow-y: auto;
+    }
+</style>

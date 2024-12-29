@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "限制級遊戲 免費序號領取";
+
+    var isPartial = ViewBag.IsPartial ?? false;
+    if (!isPartial)
+    {
+        Layout = "~/Views/Shared/_LayoutMember.cshtml";
+    }
+    else
+    {
+        Layout = null;
+    }
+}
+
+<h2>限制級遊戲 免費序號領取</h2>
+<hr />
+<div class="row" style="margin-top:20px;">
+    @foreach (var item in Model)
+    {
+        <div class="col-12 col-md-4" style="margin-top: 30px; padding: 10px">
+            <div class="img-thumbnail">
+                <div class="caption">
+                    <h4>@item.Title</h4>
+                    <div style="width: 100%; overflow: hidden;">
+                        @Html.Raw(item.Description)
+                    </div>
+                    <p><strong>發佈時間:</strong> @item.PubDate.ToString("yyyy-MM-dd HH:mm:ss")</p>
+                    <a href="@item.Link" class="btn btn-primary" target="_blank">閱讀原文</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<hr />
+<style>
+    div[style] img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    div[style] iframe {
+        max-width: 100%;
+    }
+</style>
