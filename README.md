@@ -1,6 +1,6 @@
 # 遊戲資訊網
 ## 摘要
-一個使用ASP.NET MVC製作的一個小網站，整合遊戲新聞資訊、Steam與Epic免費遊戲等等資訊
+一個使用ASP.NET MVC製作的小網站，整合遊戲新聞資訊、Steam與Epic免費遊戲等等資訊
 
 ## 介紹
 - 訪客功能
@@ -30,7 +30,7 @@
 	    <td>表單名稱</td>
 	    <td>資料欄位</td>
 	    <td>資料型態</td>  
-      <td>資料型態</td>  
+      	    <td>備註</td>  
 	</tr >
 	<tr>
 	    <td rowspan="7">tMember</td>
