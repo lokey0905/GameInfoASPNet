@@ -60,12 +60,12 @@
 	</tr>
   <tr>
 	    <td>fBirth</td>
-	    <td>NVARCHAR (50)</td>
+	    <td>DATETIME</td>
       <td>使用者生日，用於驗證年齡</td>
 	</tr>
   <tr>
 	    <td>fIsAdmin</td>
-	    <td>NVARCHAR (50)</td>
+	    <td>BIT</td>
       <td>是否為管理員</td>
 	</tr>
 </table>
